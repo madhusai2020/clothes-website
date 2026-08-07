@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sell Your Clothes | Pathway</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="sell-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Pathway</a>
+      <nav class="main-nav">
+        <a href="index.html">Shop</a>
+        <a href="sell.html" class="active">Sell</a>
+        <a href="#categories">Categories</a>
+        <a href="index.html#market">New In</a>
+        <a href="#sustainability">Sustainability</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-field">
+          <span>⌕</span>
+          <input type="search" placeholder="Search for items, brands, or styles" />
+        </label>
+        <button class="icon-action" aria-label="Wishlist"><span class="action-icon">♡</span> Wishlist</button>
+        <button class="icon-action" aria-label="Bag"><span class="action-icon">▢</span> Bag</button>
+        <button class="nav-action">Sign In</button>
+      </div>
+    </div>
+    <div class="category-nav container" id="categories">
+      <a href="#">Women</a>
+      <a href="#">Men</a>
+      <a href="#">Outerwear</a>
+      <a href="#">Tops</a>
+      <a href="#">Dresses</a>
+      <a href="#">Bottoms</a>
+      <a href="#">Shoes</a>
+      <a href="#">Bags</a>
+      <a href="#">Accessories</a>
+      <a href="#">Sale</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero-sell">
+      <div class="container hero-sell-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Sell with Pathway</p>
+          <h1>List your clothing quickly and beautifully.</h1>
+          <p class="hero-text">Upload photos, describe condition, and add a price. Your item will appear in our curated resale feed with a premium visual style.</p>
+          <div class="hero-actions">
+            <a href="#sell-form" class="button button-primary">Start your listing</a>
+            <a href="index.html#market" class="button button-secondary">Browse marketplace</a>
+          </div>
+        </div>
+        <div class="hero-image-grid">
+          <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="hero-image" style="background-image: url('https://images.unsplash.com/photo-1520975911101-5a00e3e963fb?auto=format&fit=crop&w=900&q=80');"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sell-form" class="sell-section container">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Create a listing</p>
+          <h2>Upload your item and connect with buyers.</h2>
+        </div>
+        <p>All listings are saved in your browser for this demo. For a full site, we can add back-end storage and seller accounts.</p>
+      </div>
+      <div class="sell-layout">
+        <form id="sellForm" class="sell-form">
+          <label>
+            Item title
+            <input type="text" id="productTitle" placeholder="Vintage denim jacket" required />
+          </label>
+          <label>
+            Brand
+            <input type="text" id="productBrand" placeholder="Levi's" required />
+          </label>
+          <label>
+            Description
+            <textarea id="productDescription" rows="4" placeholder="Share the story, size, and condition." required></textarea>
+          </label>
+          <div class="double-inputs">
+            <label>
+              Price ($)
+              <input type="number" id="productPrice" min="1" placeholder="68" required />
+            </label>
+            <label>
+              Category
+              <select id="productCategory">
+                <option>Women</option>
+                <option>Men</option>
+                <option>Outerwear</option>
+                <option>Tops</option>
+                <option>Dresses</option>
+                <option>Bottoms</option>
+                <option>Shoes</option>
+                <option>Bags</option>
+                <option>Accessories</option>
+              </select>
+            </label>
+            <label>
+              Size
+              <select id="productSize">
+                <option>XS</option>
+                <option>S</option>
+                <option selected>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>One Size</option>
+              </select>
+            </label>
+          </div>
+          <div class="double-inputs">
+            <label>
+              Condition
+              <select id="productCondition">
+                <option>New with tags</option>
+                <option selected>Excellent</option>
+                <option>Good</option>
+                <option>Fair</option>
+              </select>
+            </label>
+            <label>
+              Seller
+              <input type="text" id="productSeller" placeholder="@yourcloset" required />
+            </label>
+          </div>
+          <label class="file-upload">
+            Item photo
+            <input type="file" id="productImage" accept="image/*" required />
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="button button-primary">Publish listing</button>
+            <span id="formMessage" class="form-message"></span>
+          </div>
+        </form>
+        <aside class="preview-panel">
+          <div class="preview-header">
+            <p class="eyebrow">Preview</p>
+            <h3>How your listing will appear</h3>
+          </div>
+          <div id="previewCard" class="preview-card">
+            <div id="previewImage" class="preview-image">Upload a photo to preview</div>
+            <div class="preview-info">
+              <h4 id="previewTitle">Item title</h4>
+              <p id="previewDescription">Description appears here.</p>
+              <div class="preview-meta">
+                <span id="previewPrice">$0</span>
+                <span id="previewCategory">Category</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="about-section container" id="about">
+      <div class="section-header">
+        <div>
+          <p class="eyebrow">Why sell here?</p>
+          <h2>Built for effortless resale.</h2>
+        </div>
+        <p>High-quality images, clean listings, and a curated shopping experience help your items stand out.</p>
+      </div>
+      <div class="about-grid">
+        <article>
+          <h3>Visual first</h3>
+          <p>Beautiful product presentation makes buyers feel confident before they click.</p>
+        </article>
+        <article>
+          <h3>Fast setup</h3>
+          <p>Simple fields and photo uploads keep listing creation quick and painless.</p>
+        </article>
+        <article>
+          <h3>Premium layout</h3>
+          <p>Modern styling with big imagery and clear pricing helps your items sell faster.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Pathway. Resale design for peer-to-peer fashion.</p>
+      <div class="footer-links">
+        <a href="index.html#market">Marketplace</a>
+        <a href="sell.html">Sell</a>
+        <a href="index.html#about">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

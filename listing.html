@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listing Details | Pathway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="listing">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Pathway</a>
+      <nav class="main-nav">
+        <a href="shop.html">Shop</a>
+        <a href="sell.html">Sell</a>
+        <a href="shop.html#categories">Categories</a>
+        <a href="shop.html#new-in">New In</a>
+        <a href="shop.html#sustainability">Sustainability</a>
+        <a href="shop.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-field search-header">
+          <span>⌕</span>
+          <input type="search" id="listingSearchInput" placeholder="Search for items, brands, or styles" />
+        </label>
+        <button class="icon-action" aria-label="Wishlist"><span class="action-icon">♡</span> Wishlist</button>
+        <button class="icon-action" aria-label="Bag"><span class="action-icon">▢</span> Bag</button>
+        <button class="nav-action">Sign In</button>
+      </div>
+    </div>
+    <div class="category-nav container" id="categories">
+      <a href="shop.html">Women</a>
+      <a href="shop.html">Men</a>
+      <a href="shop.html">Outerwear</a>
+      <a href="shop.html">Tops</a>
+      <a href="shop.html">Dresses</a>
+      <a href="shop.html">Bottoms</a>
+      <a href="shop.html">Shoes</a>
+      <a href="shop.html">Bags</a>
+      <a href="shop.html">Accessories</a>
+      <a href="shop.html">Sale</a>
+    </div>
+  </header>
+
+  <main class="page-shell listing-shell container">
+    <section id="listingContent" class="listing-page"></section>
+    <section class="similar-listings container">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">You May Also Like</p>
+          <h2>Similar resale pieces</h2>
+        </div>
+      </div>
+      <div id="similarGrid" class="listing-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Pathway. A peer-to-peer resale destination.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="sell.html">Sell</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

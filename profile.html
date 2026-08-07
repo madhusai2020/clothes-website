@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller Profile | Pathway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="profile">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Pathway</a>
+      <nav class="main-nav">
+        <a href="shop.html">Shop</a>
+        <a href="sell.html">Sell</a>
+        <a href="shop.html#categories">Categories</a>
+        <a href="shop.html#new-in">New In</a>
+        <a href="shop.html#sustainability">Sustainability</a>
+        <a href="shop.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-field search-header">
+          <span>⌕</span>
+          <input type="search" id="profileSearchInput" placeholder="Search for items, brands, or styles" />
+        </label>
+        <button class="icon-action" aria-label="Wishlist"><span class="action-icon">♡</span> Wishlist</button>
+        <button class="icon-action" aria-label="Bag"><span class="action-icon">▢</span> Bag</button>
+        <button class="nav-action">Sign In</button>
+      </div>
+    </div>
+    <div class="category-nav container" id="categories">
+      <a href="shop.html">Women</a>
+      <a href="shop.html">Men</a>
+      <a href="shop.html">Outerwear</a>
+      <a href="shop.html">Tops</a>
+      <a href="shop.html">Dresses</a>
+      <a href="shop.html">Bottoms</a>
+      <a href="shop.html">Shoes</a>
+      <a href="shop.html">Bags</a>
+      <a href="shop.html">Accessories</a>
+      <a href="shop.html">Sale</a>
+    </div>
+  </header>
+
+  <main class="page-shell container profile-shell">
+    <section class="profile-header card-panel">
+      <div class="profile-avatar">SF</div>
+      <div>
+        <p class="eyebrow" id="sellerSince">Seller since 2022</p>
+        <h1 id="sellerName">@sarahstyle</h1>
+        <p id="sellerBio">Curating premium pre-owned pieces with a focus on modern editorial style.</p>
+      </div>
+      <div class="profile-stats">
+        <div><strong id="statRating">4.9</strong><span>Rating</span></div>
+        <div><strong id="statSales">180</strong><span>Sales</span></div>
+        <div><strong id="statItems">24</strong><span>Active listings</span></div>
+      </div>
+    </section>
+
+    <section class="section-title-row">
+      <div>
+        <p class="eyebrow">Seller storefront</p>
+        <h2>Active listings</h2>
+      </div>
+    </section>
+    <div id="sellerListings" class="listing-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Pathway. A peer-to-peer resale destination.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="sell.html">Sell</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

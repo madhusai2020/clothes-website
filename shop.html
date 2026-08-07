@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop | Pathway</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="shop">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Pathway</a>
+      <nav class="main-nav">
+        <a href="shop.html" class="active">Shop</a>
+        <a href="sell.html">Sell</a>
+        <a href="shop.html#categories">Categories</a>
+        <a href="shop.html#new-in">New In</a>
+        <a href="shop.html#sustainability">Sustainability</a>
+        <a href="shop.html#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-field search-header">
+          <span>⌕</span>
+          <input type="search" id="shopSearchInput" placeholder="Search for items, brands, or styles" />
+        </label>
+        <button class="icon-action" aria-label="Wishlist"><span class="action-icon">♡</span> Wishlist</button>
+        <button class="icon-action" aria-label="Bag"><span class="action-icon">▢</span> Bag</button>
+        <button class="nav-action">Sign In</button>
+      </div>
+    </div>
+    <div class="category-nav container" id="categories">
+      <a href="#">Women</a>
+      <a href="#">Men</a>
+      <a href="#">Outerwear</a>
+      <a href="#">Tops</a>
+      <a href="#">Dresses</a>
+      <a href="#">Bottoms</a>
+      <a href="#">Shoes</a>
+      <a href="#">Bags</a>
+      <a href="#">Accessories</a>
+      <a href="#">Sale</a>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="shop-hero container">
+      <div>
+        <p class="eyebrow">Browse the marketplace</p>
+        <h1>Search secondhand fashion with curated style.</h1>
+        <p class="section-description">Filter by category, brand, size, and condition to discover premium resale pieces from everyday sellers.</p>
+      </div>
+      <div class="shop-summary">
+        <div>
+          <strong id="listingCount">0</strong>
+          <span>Active listings</span>
+        </div>
+        <div>
+          <strong>4.9/5</strong>
+          <span>Buyer satisfaction</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container shop-layout">
+      <aside class="filter-panel">
+        <div class="filter-card">
+          <p class="eyebrow">Sort & search</p>
+          <label>
+            Search
+            <input type="text" id="shopSearch" placeholder="Search listings" />
+          </label>
+          <label>
+            Sort by
+            <select id="shopSort">
+              <option value="newest">Newest</option>
+              <option value="priceLow">Price: Low to High</option>
+              <option value="priceHigh">Price: High to Low</option>
+              <option value="popular">Most Popular</option>
+            </select>
+          </label>
+        </div>
+        <div class="filter-card">
+          <p class="eyebrow">Filters</p>
+          <label>
+            Category
+            <select id="filterCategory">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <label>
+            Brand
+            <input type="text" id="filterBrand" placeholder="Example: Levi's" />
+          </label>
+          <label>
+            Size
+            <select id="filterSize">
+              <option value="all">All</option>
+            </select>
+          </label>
+          <label>
+            Condition
+            <select id="filterCondition">
+              <option value="all">All</option>
+              <option value="New with tags">New with tags</option>
+              <option value="Excellent">Excellent</option>
+              <option value="Good">Good</option>
+              <option value="Fair">Fair</option>
+            </select>
+          </label>
+          <label>
+            Color
+            <input type="text" id="filterColor" placeholder="Example: Beige" />
+          </label>
+        </div>
+      </aside>
+
+      <section class="shop-results">
+        <div class="results-header">
+          <div>
+            <p class="eyebrow">Fresh finds</p>
+            <h2>Resale pieces from real sellers.</h2>
+          </div>
+          <button id="clearFilters" class="button button-secondary">Clear filters</button>
+        </div>
+        <div id="shopGrid" class="listing-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Pathway. A peer-to-peer resale destination.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="sell.html">Sell</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
